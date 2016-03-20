@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+  <title>TODO supply a title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/lecture.css" rel="stylesheet">
+  <link href="./font/genericons.css" rel="stylesheet">
+  <script src="./js/jquery-1.12.1.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("#toggle").click(function(){
+      $("#navbar").slideToggle();
+    });
+    $(window).resize(function(){
+      var win = $(window).width();
+      var p = 640;
+      if(win > p){
+        $("#navbar").show();
+      } else {
+        $("#navbar").hide();
+      }
+    });
+    
+  });
+  </script>
+</head>
+<body>
+  <header id="header">
+    <nav class="navbar navbar-default navbar-fixed-top clearfix">
+      <div class="navbar-header clearfix">
+        <div id="toggle"><a href="#">menu</a></div>
+      </div>
+      <div class="navbar-collapse collapse clearfix" id="navbar">
+        <ul id="menu" class="nav navbar-nav center-block">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">NEWS</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">PLAN</a></li>
+          <li><a href="#">RECRUIT</a></li>
+          <li><a href="#">Q&amp;A</a></li>
+        </ul>    
+      </div>    
+    </nav>
+  </header>
+  <div id="top">
+    <div class="bg-image">
+      <img src="./images/bg.png" alt="" />
+    </div>
+    <div class="top_label">
+      <h1>Eyegle Desin</h1>
+      <h3 class="border-bottom-top">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</h3>
+      <div class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+    </div>
+  </div>
+  <main id="main">
+    <div class="service clearfix">
+      <div class="container clearfix">
+        <div class="text-center title">
+          <h3>Eyegle Design</h3>
+        </div>
+        <div class="text-center">
+          <div class="box">
+            <div class="numbar">
+              <p><span class="genericon genericon-youtube"></span></p>
+            </div>
+            <a href="#">
+              <h4 class="service-heading">テキストテキスト</h4>
+            </a>
+            <p class="text-muted">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </div>
+          <div class="box">
+            <div class="numbar">
+              <p><span class="genericon genericon-mail"></span></p>
+            </div>
+            <a href="#">
+              <h4 class="service-heading">テキストテキスト</h4>
+            </a>
+            <p class="text-muted">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </div>
+          <div class="box">
+            <div class="numbar">
+              <p><span class="genericon genericon-user"></span></p>
+            </div>
+            <a href="#">
+              <h4 class="service-heading">テキストテキスト</h4>
+            </a>
+            <p class="text-muted">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="performance clearfix">
+      <div class="container text-center">
+        <div class="title">
+          <h3>Gallery</h3>
+        </div>
+        <div class="performance_box">
+          <div class="image_box">
+            <img src="./images/sample.jpg" alt="" />
+          </div>
+        </div>
+        <div class="performance_box">
+          <div class="image_box">
+            <img src="./images/sample.jpg" alt="" />
+          </div>
+        </div>
+        <div class="performance_box">
+          <div class="image_box">
+            <img src="./images/sample.jpg" alt="" />
+          </div>
+        </div>
+        <div class="performance_box">
+          <div class="image_box">
+            <img src="./images/sample.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer id="footer" class="navbar navbar-default clearfix">
+    <div class="container">
+      <div class="clearfix">
+        <div class="box logo">
+          <div class="text"><a href="#">Eyegle Design</a></div>
+        </div>
+        <div class="box links">
+          <p><a href="/">ホーム</a></p>
+          <p><a href="/news">ニュース</a></p>
+          <p><a href="/about">サービスについて</a></p>
+          <p><a href="/policy/tokusyohou">特定商取引法に基づく表記</a></p>
+        </div>
+        <div class="box links">
+          <p><a href="/plan">プラン</a></p>
+          <p><a href="/recruit">リクルート</a></p>
+          <p><a href="question">Q&amp;A</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="text-center">
+    <div class="overflow">
+      <p>Copyright Eyegle Design All Rights Reserved.</p>
+    </div>
+  </div>
+</body>
+</html>
